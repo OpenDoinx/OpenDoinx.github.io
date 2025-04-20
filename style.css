@@ -1,0 +1,323 @@
+/* === General Reset & Defaults === */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth; /* Smooth scroll for anchor links */
+    scroll-padding-top: 80px; /* Offset for fixed header */
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+h1, h2, h3 {
+    line-height: 1.2;
+    margin-bottom: 0.75em;
+    color: #1a2a4d; /* Dark blue */
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    font-size: 1.8rem;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 0.3em;
+    margin-top: 1.5em; /* Add space above section titles */
+}
+
+h3 {
+    font-size: 1.4rem;
+    color: #0056b3; /* Medium blue */
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+ul, ol {
+    margin-bottom: 1em;
+    padding-left: 1.5em;
+}
+
+li {
+    margin-bottom: 0.5em;
+}
+
+a {
+    color: #007bff; /* Standard link blue */
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+strong {
+  color: #1a2a4d;
+}
+
+/* === Layout === */
+header, main, footer {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+main section {
+    background-color: #fff;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+main article {
+  margin-top: 20px;
+  padding-left: 15px;
+  border-left: 3px solid #e0e0e0;
+}
+
+/* === Header & Navigation === */
+header {
+    background-color: #1a2a4d; /* Dark blue */
+    color: #fff;
+    padding-top: 10px;
+    padding-bottom: 0; /* Remove bottom padding to align nav */
+    position: sticky; /* Make header stick */
+    top: 0;
+    z-index: 1000;
+    width: 100%; /* Required for sticky */
+    max-width: none; /* Override max-width for full-width sticky header */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Container inside header to keep content centered */
+header > h1, header > .nav-toggle, header > .nav {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  margin: 0.5em 0;
+  color: #fff;
+  text-align: left; /* Align title left on desktop */
+}
+
+.nav {
+  background-color: #f8f9fa; /* Light background for nav bar */
+  padding: 0; /* Remove padding around the nav itself */
+  margin-top: 10px;
+  width: 100%; /* Make nav bar full width within header */
+  max-width: none; /* Override max-width */
+  margin-left: 0; /* Reset margin */
+  margin-right: 0; /* Reset margin */
+}
+
+.nav__list {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto; /* Center the list */
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    justify-content: center; /* Center items */
+    max-width: 900px; /* Constrain nav items width */
+    padding: 5px 0; /* Padding top/bottom for the list */
+}
+
+.nav__item {
+    margin: 5px 10px; /* Spacing between items */
+}
+
+.nav__link {
+    color: #1a2a4d; /* Dark blue text */
+    font-weight: 500;
+    padding: 8px 12px;
+    display: block;
+    border-radius: 4px;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.nav__link:hover,
+.nav__link:focus {
+    background-color: #1a2a4d;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* === Mobile Navigation Toggle (Hamburger) === */
+.nav-toggle {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    padding: 0.5em;
+    z-index: 1001; /* Ensure it's above nav */
+}
+
+.hamburger {
+    display: block;
+    position: relative;
+    width: 25px;
+    height: 3px;
+    background: #fff;
+    transition: transform 0.3s ease;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    transition: transform 0.3s ease, top 0.3s ease, bottom 0.3s ease;
+}
+
+.hamburger::before {
+    top: -8px;
+}
+
+.hamburger::after {
+    bottom: -8px;
+}
+
+/* Hamburger animation when nav is open */
+.nav-open .hamburger {
+    transform: rotate(45deg);
+}
+.nav-open .hamburger::before {
+    top: 0;
+    transform: rotate(90deg);
+}
+.nav-open .hamburger::after {
+    bottom: 0;
+    transform: rotate(90deg); /* Make it invisible under the main line */
+    opacity: 0;
+}
+
+
+/* === Footer === */
+footer {
+    background-color: #343a40; /* Dark grey */
+    color: #f8f9fa; /* Light text */
+    text-align: center;
+    padding: 30px 15px;
+    margin-top: 30px;
+    width: 100%; /* Full width footer */
+    max-width: none; /* Override max-width */
+}
+ /* Container inside footer to keep content centered */
+footer > h2, footer > p {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+footer h2 {
+  color: #fff;
+  border-bottom: none;
+  margin-bottom: 1em;
+}
+
+footer a {
+    color: #adb5bd; /* Lighter grey for links */
+}
+
+footer a:hover, footer a:focus {
+    color: #fff;
+}
+
+/* === Responsive Design === */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+        text-align: center; /* Center title on mobile */
+    }
+     header h1 {
+       text-align: center; /* Center title in header on mobile */
+       padding-left: 50px; /* Make space for hamburger */
+       padding-right: 50px;
+     }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    /* --- Mobile Navigation --- */
+    .nav-toggle {
+        display: block; /* Show hamburger */
+    }
+
+    .nav {
+        position: fixed; /* Take over screen */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh; /* Full height */
+        background: rgba(26, 42, 77, 0.95); /* Semi-transparent dark blue */
+        transform: translateX(100%); /* Start off-screen */
+        transition: transform 0.3s ease-in-out;
+        padding-top: 60px; /* Space below header */
+        margin-top: 0; /* Reset margin */
+    }
+
+    .nav-open .nav {
+        transform: translateX(0); /* Slide in */
+    }
+
+    .nav__list {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        padding: 0;
+    }
+
+    .nav__item {
+        margin: 15px 0;
+    }
+
+    .nav__link {
+        color: #fff; /* White text on dark background */
+        font-size: 1.2rem;
+        padding: 10px 20px;
+    }
+     .nav__link:hover,
+     .nav__link:focus {
+         background-color: rgba(255, 255, 255, 0.1); /* Slight highlight */
+     }
+
+    /* Added rule to hide main content scrollbar when nav is open */
+    body.nav-open {
+      overflow: hidden;
+    }
+}
