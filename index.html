@@ -478,7 +478,181 @@
         <hr style="margin-top: 30px;"> <!-- Added a separator -->
         <p style="margin-top: 20px;">Email: info@ejemplo-agente.com | Teléfono: +504 1234-5678</p> 
         <p>&copy; 2024 Guía de Envíos Honduras. Todos los derechos reservados.</p>
-    </footer>
+    </footer/* === Styling for Added Sections and Tables === */
+
+/* General Styling for Tables */
+section table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-size: 0.9em; /* Slightly smaller text in tables */
+}
+
+/* Responsive wrapper for wide tables */
+.table-responsive-wrapper {
+     overflow-x: auto;
+     margin-bottom: 15px; /* Add some space below the scrolled table */
+}
+
+section th,
+section td {
+    border: 1px solid #ddd;
+    padding: 8px 10px;
+    text-align: left;
+    vertical-align: top; /* Align content top */
+}
+
+section th {
+    background-color: #f2f2f2; /* Light grey header */
+    font-weight: bold;
+    white-space: nowrap; /* Prevent headers from wrapping too easily */
+}
+
+/* Zebra striping for better readability */
+section tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Warning Paragraph Style */
+.warning-text {
+    font-weight: bold;
+    color: #c00; /* Red color for warnings */
+    background-color: #fff3f3; /* Light pink background */
+    padding: 10px;
+    border: 1px solid #c00;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+
+/* === Quote Request Form Styling === */
+#quote-request-form {
+    max-width: 700px; /* Slightly wider */
+    margin: 30px auto; /* Center it */
+    padding: 25px 30px;
+    background-color: #f8f9fa; /* Lighter background */
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    text-align: left; /* Ensure text aligns left */
+    color: #333; /* Ensure good text contrast */
+}
+
+#quote-request-form fieldset {
+    border: 1px solid #ddd; /* Subtle border for grouping */
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+#quote-request-form legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #1a2a4d; /* Match header color */
+    padding: 0 5px; /* Avoid border cutting through legend */
+}
+
+#quote-request-form p {
+    margin-bottom: 15px; /* Consistent spacing */
+}
+
+#quote-request-form label {
+    display: block; /* Each label on its own line */
+    margin-bottom: 5px;
+    font-weight: 600; /* Slightly bolder labels */
+    color: #495057;
+}
+
+/* Style for required field asterisks */
+#quote-request-form label:after {
+    content: "*";
+    color: red;
+    margin-left: 3px;
+    /* Only show for labels that have a required input immediately following */
+    /* This is a bit tricky without JS, manually added * to label text is easier */
+}
+/* Simpler: Ensure required text labels have the asterisk manually added */
+
+#quote-request-form input[type="text"],
+#quote-request-form input[type="email"],
+#quote-request-form input[type="tel"],
+#quote-request-form input[type="number"],
+#quote-request-form textarea,
+#quote-request-form select {
+    width: 100%;
+    padding: 10px; /* More padding */
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box; /* Include padding and border in width */
+    margin-top: 3px;
+}
+
+#quote-request-form textarea {
+    resize: vertical; /* Allow vertical resize */
+    min-height: 80px;
+}
+
+#quote-request-form .form-hint {
+    font-size: 0.9em;
+    color: #6c757d;
+    margin-top: -10px; /* Adjust spacing */
+}
+
+#quote-request-form .consent-checkbox {
+    display: flex;
+    align-items: center; /* Align checkbox and label */
+    margin-bottom: 20px;
+}
+
+#quote-request-form .consent-checkbox input[type="checkbox"] {
+    width: auto; /* Don't make checkbox full width */
+    margin-right: 10px; 
+    flex-shrink: 0;
+}
+#quote-request-form .consent-checkbox label {
+    margin-bottom: 0; /* Reset margin for inline label */
+    font-weight: normal; /* Normal weight for consent text */
+}
+
+#quote-request-form .submit-button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#quote-request-form button[type="submit"] {
+    padding: 12px 30px;
+    background-color: #0056b3; /* Darker blue */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#quote-request-form button[type="submit"]:hover {
+    background-color: #004494; /* Slightly darker on hover */
+}
+
+/* Honeypot should be hidden */
+.hidden-honeypot {
+    position: absolute;
+    left: -5000px; /* Move off-screen */
+    visibility: hidden;
+}
+
+/* Optional: Adjust table styling within media query if needed */
+@media (max-width: 768px) {
+    #quote-request-form {
+        padding: 20px 15px;
+    }
+
+    section th, section td {
+        padding: 6px 8px; /* Slightly smaller padding on mobile */
+    }
+    /* The table-responsive-wrapper div will handle horizontal scrolling */
+}>
 
     <script src="scriptchina.js"></script> 
 </body>
