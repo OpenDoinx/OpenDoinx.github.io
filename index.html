@@ -3,657 +3,721 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guía Completa: Envío de Mercancías de China a Honduras</title>
-    <!-- Link to your external stylesheet -->
-    <link rel="stylesheet" href="style.css">
-
-    <!-- Your Google AdSense Connection Code -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7438295781780333"
-         crossorigin="anonymous"></script> 
-
+    <title>China-Honduras Trade Network | Shipping Guide</title>
+    <style>
+        /* Bloomberg-inspired styling */
+        :root {
+            --black: #000000;
+            --dark-gray: #333333;
+            --medium-gray: #666666;
+            --light-gray: #f2f2f2;
+            --white: #ffffff;
+            --accent: #0068B3;
+            --secondary-accent: #FF7100;
+            --success: #0b7261;
+            --warning: #ffa000;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+        
+        body {
+            color: var(--dark-gray);
+            line-height: 1.6;
+            background-color: var(--white);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background-color: var(--black);
+            padding: 15px 0;
+            border-bottom: 2px solid var(--accent);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            color: var(--white);
+            font-weight: 700;
+            font-size: 1.5rem;
+            text-decoration: none;
+        }
+        
+        .logo span {
+            color: var(--accent);
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 25px;
+        }
+        
+        nav ul li a {
+            color: var(--white);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: var(--accent);
+        }
+        
+        .market-strip {
+            background-color: var(--light-gray);
+            padding: 10px 0;
+            border-bottom: 1px solid #e0e0e0;
+            font-size: 0.9rem;
+        }
+        
+        .ticker-container {
+            display: flex;
+            overflow-x: auto;
+            white-space: nowrap;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        
+        .ticker-container::-webkit-scrollbar {
+            display: none;
+        }
+        
+        .ticker-item {
+            margin-right: 25px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .ticker-name {
+            font-weight: 600;
+            margin-right: 8px;
+        }
+        
+        .ticker-value {
+            margin-right: 5px;
+        }
+        
+        .ticker-change.positive {
+            color: var(--success);
+        }
+        
+        .ticker-change.negative {
+            color: #d32f2f;
+        }
+        
+        .hero {
+            background-color: var(--light-gray);
+            padding: 50px 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        .hero-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .hero-text {
+            flex: 1;
+            padding-right: 50px;
+        }
+        
+        .hero-text h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 15px;
+            line-height: 1.2;
+            color: var(--black);
+        }
+        
+        .hero-text p {
+            font-size: 1.1rem;
+            color: var(--medium-gray);
+            margin-bottom: 25px;
+        }
+        
+        .hero-cta {
+            display: inline-block;
+            background-color: var(--accent);
+            color: var(--white);
+            padding: 12px 25px;
+            border-radius: 4px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        
+        .hero-cta:hover {
+            background-color: #005394;
+        }
+        
+        .section {
+            padding: 60px 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        .section-header {
+            text-align: left;
+            margin-bottom: 40px;
+        }
+        
+        .section-header h2 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--black);
+            margin-bottom: 10px;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-header h2:after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 40px;
+            height: 3px;
+            background-color: var(--accent);
+        }
+        
+        .section-header p {
+            color: var(--medium-gray);
+            font-size: 1.1rem;
+        }
+        
+        .card {
+            background-color: var(--white);
+            border-radius: 4px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            padding: 30px;
+            margin-bottom: 30px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .card h3 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: var(--black);
+        }
+        
+        .card p {
+            color: var(--medium-gray);
+            margin-bottom: 20px;
+        }
+        
+        .cards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+        }
+        
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+        
+        .data-table th, .data-table td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        .data-table th {
+            background-color: var(--light-gray);
+            font-weight: 600;
+            color: var(--black);
+        }
+        
+        .data-table tr:hover {
+            background-color: #f8f8f8;
+        }
+        
+        .form-section {
+            background-color: var(--light-gray);
+            padding: 60px 0;
+        }
+        
+        .form-container {
+            background-color: var(--white);
+            padding: 40px;
+            border-radius: 4px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        
+        .form-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        .form-group label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: var(--dark-gray);
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+        
+        .form-control:focus {
+            border-color: var(--accent);
+            outline: none;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--accent);
+            color: var(--white);
+            border: none;
+            padding: 12px 25px;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .btn:hover {
+            background-color: #005394;
+        }
+        
+        .footer {
+            background-color: var(--black);
+            color: var(--white);
+            padding: 50px 0 20px;
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-column h3 {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            color: var(--white);
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links a {
+            color: #bbb;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: var(--white);
+        }
+        
+        .copyright {
+            text-align: center;
+            color: #bbb;
+            padding-top: 20px;
+            border-top: 1px solid #444;
+        }
+        
+        @media (max-width: 768px) {
+            .hero-content {
+                flex-direction: column;
+            }
+            
+            .hero-text {
+                padding-right: 0;
+                margin-bottom: 30px;
+            }
+            
+            .cards-container {
+                grid-template-columns: 1fr;
+            }
+            
+            nav ul {
+                display: none;
+            }
+        }
+    </style>
 </head>
 <body>
-
     <header>
-        <h1>Envío China - Honduras</h1>
-        <button class="nav-toggle" aria-label="Abrir menú">
-            <span class="hamburger"></span>
-        </button>
-        <nav class="nav">
-            <ul class="nav__list">
-                <li class="nav__item"><a href="#metodos" class="nav__link">Métodos de Envío</a></li>
-                <li class="nav__item"><a href="#costos" class="nav__link">Costos Estimados</a></li>
-                <li class="nav__item"><a href="#tiempos" class="nav__link">Tiempos Estimados</a></li>
-                <li class="nav__item"><a href="#puerta-a-puerta" class="nav__link">Servicio Puerta a Puerta</a></li>
-                <li class="nav__item"><a href="#cost-components" class="nav__link">Componentes del Costo</a></li>
-                <li class="nav__item"><a href="#example-fcl" class="nav__link">Ejemplo FCL (Muebles)</a></li>
-                <!-- Add links for Example B & C here later -->
-                <li class="nav__item"><a href="#noticias" class="nav__link">Noticias y Contexto</a></li>
-                <li class="nav__item"><a href="#conclusion" class="nav__link">Conclusión</a></li>
-                <li class="nav__item"><a href="#contacto" class="nav__link">Contacto / Cotización</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section id="introduccion">
-             <h2>Guía Completa para el Envío de Mercancías de China a Honduras</h2>
-             <p>Navegar el proceso de importación desde China puede ser complejo. Esta guía detalla los métodos, costos, tiempos y consideraciones clave para enviar sus productos a Honduras de manera eficiente.</p>
-        </section>
-
-        <section id="metodos">
-            <h2>Métodos de Envío Principales</h2>
-            <p>Existen dos modalidades principales para transportar mercancías desde China a Honduras: el transporte marítimo y el transporte aéreo.</p>
-            <article id="transporte-maritimo">
-                <h3>Transporte Marítimo</h3>
-                <p><strong>Ventajas:</strong> Es la opción más económica, especialmente para grandes volúmenes de carga o mercancías no urgentes. Permite transportar una gran variedad de productos, desde materias primas hasta maquinaria pesada.</p>
-                <p><strong>Puertos Clave:</strong> Los envíos desde China (puertos como Shanghái, Ningbo, Shenzhen) suelen dirigirse a los principales puertos hondureños como Puerto Cortés y, en menor medida, Puerto Castilla o San Lorenzo. Puerto Cortés es el puerto más grande de Centroamérica y el principal centro de contenedores internacionales en Honduras.</p>
-                <p><strong>Tipos de Servicios Marítimos:</strong></p>
+        <div class="container header-container">
+            <a href="#" class="logo">China-Honduras <span>Trade Network</span></a>
+            <nav>
                 <ul>
-                    <li><strong>Contenedor Completo (FCL - Full Container Load):</strong> Ideal para cargas que llenan un contenedor de 20 o 40 pies. Ofrece exclusividad y menor riesgo de daños.</li>
-                    <li><strong>Carga Consolidada (LCL - Less than Container Load):</strong> Para envíos más pequeños que no llenan un contenedor completo. Se agrupan varias cargas de distintos clientes en un solo contenedor, lo que reduce costos.</li>
-                    <li><strong>Roll-on/Roll-off (RoRo):</strong> Para vehículos y maquinaria pesada que pueden rodar sobre y fuera del barco.</li>
-                    <li><strong>Break Bulk:</strong> Para cargas sobredimensionadas que no caben en contenedores estándar.</li>
-                    <li><strong>Contenedores Especiales:</strong> Refrigerados (para perecederos) o flat-rack (para cargas de gran tamaño).</li>
+                    <li><a href="#shipping-methods">Métodos de Envío</a></li>
+                    <li><a href="#costs">Costos</a></li>
+                    <li><a href="#transit-times">Tiempos de Tránsito</a></li>
+                    <li><a href="#quote">Solicitar Cotización</a></li>
                 </ul>
-                <p><strong>Factores que Afectan el Costo Marítimo:</strong> Precios del combustible, distancia, demanda estacional, tasas portuarias y tipo de servicio (FCL/LCL).</p>
-            </article>
-            <article id="transporte-aereo">
-                <h3>Transporte Aéreo</h3>
-                <p><strong>Ventajas:</strong> Es el método más rápido, ideal para mercancías urgentes, de alto valor o perecederas. Reduce significativamente los tiempos de tránsito.</p>
-                <p><strong>Aeropuertos Clave:</strong> Los principales aeropuertos de carga en Honduras son el Aeropuerto Internacional Ramón Villeda Morales (San Pedro Sula) y el Aeropuerto Internacional Toncontín (Tegucigalpa). También existen otros aeropuertos con capacidad de carga, pero estos son los principales puntos de entrada para carga aérea internacional.</p>
-                <p><strong>Factores que Afectan el Costo Aéreo:</strong> Peso volumétrico (espacio que ocupa la carga), peso real, urgencia, tipo de mercancía y tarifas de las aerolíneas.</p>
-            </article>
-        </section>
-
-        <section id="costos">
-            <h2>Costos Estimados y Factores Clave (General)</h2>
-            <p>Determinar el costo exacto requiere una cotización específica. Vea las secciones <a href="#cost-components">Componentes del Costo</a> y <a href="#example-fcl">Ejemplos Ilustrativos</a> para más detalles. Factores generales incluyen:</p>
-            <ul>
-                <li>Flete (Marítimo o Aéreo)</li>
-                <li>Seguro de Carga</li>
-                <li>Impuestos y Aranceles de Importación (DAI + ISV)</li>
-                <li>Gastos Portuarios/Aeroportuarios</li>
-                <li>Desaduanaje (Honorarios Agente Aduanero)</li>
-                <li>Transporte Terrestre Local</li>
-            </ul>
-            <p><strong>Consejo:</strong> Obtenga cotizaciones detalladas que desglosen todos los costos para evitar sorpresas.</p>
-        </section>
-
-        <section id="tiempos">
-            <h2>Tiempos Estimados de Tránsito</h2>
-            <ul>
-                <li><strong>Transporte Marítimo:</strong> Generalmente entre <strong>30 y 45 días</strong> desde los principales puertos chinos hasta Puerto Cortés. Esto puede variar según la ruta, las escalas y la congestión portuaria.</li>
-                <li><strong>Transporte Aéreo:</strong> Típicamente entre <strong>5 y 10 días</strong>, incluyendo los procesos en origen y destino. Es mucho más rápido pero considerablemente más caro.</li>
-            </ul>
-            <p><strong>Nota:</strong> Estos son tiempos de tránsito. Sume tiempo adicional para la recolección en China, consolidación (si es LCL), desaduanaje en Honduras y entrega final.</p>
-        </section>
-
-        <section id="puerta-a-puerta">
-            <h2>Servicio Puerta a Puerta</h2>
-            <p>Muchos transitarios (freight forwarders) ofrecen servicios "puerta a puerta". Esto significa que se encargan de todo el proceso:</p>
-            <ul>
-                <li>Recolección de la mercancía en la fábrica/almacén en China.</li>
-                <li>Transporte internacional (marítimo o aéreo).</li>
-                <li>Trámites de aduana tanto en China como en Honduras.</li>
-                <li>Entrega final en la dirección especificada en Honduras.</li>
-            </ul>
-            <p><strong>Ventaja:</strong> Simplifica enormemente el proceso para el importador, aunque suele tener un costo ligeramente superior a gestionar cada etapa por separado.</p>
-        </section>
-
-        <!-- === START: NEW SECTION - Key Cost Components === -->
-        <section id="cost-components">
-            <h2>II. Componentes Clave del Costo Explicados</h2>
-            <p>Entender los diversos cargos que contribuyen al costo total puesto en destino es el primer paso para gestionar eficazmente los gastos de importación. A continuación, se explican los componentes primarios del costo que se encuentran típicamente al importar mercancías de China a Honduras.</p>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="market-strip">
+        <div class="container">
+            <div class="ticker-container">
+                <div class="ticker-item">
+                    <span class="ticker-name">Flete China-Honduras</span>
+                    <span class="ticker-value">$3,500 - $4,500</span>
+                    <span class="ticker-change positive">↑ 2.4%</span>
+                </div>
+                <div class="ticker-item">
+                    <span class="ticker-name">Tasa DAI</span>
+                    <span class="ticker-value">10% - 15%</span>
+                    <span class="ticker-change negative">↓ 0.5%</span>
+                </div>
+                <div class="ticker-item">
+                    <span class="ticker-name">ISV</span>
+                    <span class="ticker-value">15%</span>
+                    <span class="ticker-change">Sin cambios</span>
+                </div>
+                <div class="ticker-item">
+                    <span class="ticker-name">Tiempo de Tránsito</span>
+                    <span class="ticker-value">30-45 días</span>
+                    <span class="ticker-change negative">↓ 2 días</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>Guía Completa para el Envío de Mercancías de China a Honduras</h1>
+                <p>Navegar el proceso de importación desde China puede ser complejo. Esta guía detalla los métodos, costos, tiempos y consideraciones clave para enviar sus productos a Honduras de manera eficiente.</p>
+                <a href="#quote" class="hero-cta">Solicitar Cotización</a>
+            </div>
+        </div>
+    </section>
+    
+    <section id="shipping-methods" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Métodos de Envío Principales</h2>
+                <p>Existen dos modalidades principales para transportar mercancías desde China a Honduras.</p>
+            </div>
             
-            <article>
-                <h3>Costo del Flete (Marítimo/Aéreo)</h3>
-                <p>Representa el cargo por el transporte físico de las mercancías desde el origen (China) hasta el puerto o aeropuerto de destino (Honduras). Suele ser uno de los componentes más grandes y variables del costo desembarcado. Factores que influyen en las tarifas de flete incluyen el modo de transporte (FCL, LCL o Aéreo), el peso y volumen del envío (o peso tasable para flete aéreo), los puntos específicos de origen y destino, el transportista y nivel de servicio elegidos, la estacionalidad, los precios globales del combustible y las condiciones prevalecientes del mercado relacionadas con la oferta y demanda de capacidad de envío. Índices de flete importantes como el Freightos Baltic Index (FBX) y Xeneta proporcionan información valiosa sobre las tendencias del mercado en rutas globales de alto volumen, pero no siempre ofrecen datos directos y en tiempo real específicamente para la ruta China-Honduras. Las cotizaciones específicas de los transportistas o plataformas de transitarios proporcionan estimaciones directas, pero pueden carecer de la puntualidad o la representación amplia del mercado de los índices. Esta dinámica subraya la necesidad de obtener cotizaciones actuales para envíos específicos.</p>
-            </article>
-
-            <article>
-                <h3>Seguro de Carga</h3>
-                <p>Cubre el riesgo de pérdida o daño de las mercancías durante el tránsito internacional. Aunque opcional en algunos casos, es altamente recomendable para mitigar el riesgo financiero. La prima se calcula típicamente como un porcentaje del valor asegurado del envío. La práctica estándar para calcular el valor asegurado suele ser el Valor de la Factura Comercial más el Costo del Flete, más un 10% adicional para cubrir gastos imprevistos incurridos debido a una pérdida. Las tasas de seguro en sí son variables, comúnmente oscilando entre aproximadamente 0.25% y más del 1%, influenciadas por factores como el modo de transporte (el seguro de flete aéreo suele tener tasas más altas que el marítimo), el tipo y valor de las mercancías (los artículos de alto valor o frágiles atraen primas más altas), el perfil de riesgo de la ruta de envío y el nivel de cobertura seleccionado (por ejemplo, básico vs. todo riesgo). Aunque es un porcentaje relativamente pequeño del valor total, el seguro es un componente crítico para la protección financiera.</p>
-            </article>
-
-            <article>
-                <h3>Derechos Arancelarios a la Importación Hondureños (DAI)</h3>
-                <p>Este es un impuesto aplicado por el gobierno hondureño sobre las mercancías importadas al país. Típicamente se calcula ad valorem, es decir, como un porcentaje del valor CIF (Costo, Seguro y Flete) de las mercancías. La tasa arancelaria aplicable se determina por el código específico del Sistema Armonizado (SA) del producto, un sistema internacional estandarizado para clasificar productos comercializados. La precisión en la clasificación del código SA es, por lo tanto, primordial, ya que una clasificación errónea puede llevar a pagos incorrectos de derechos, retrasos y posibles penalizaciones. Las tasas generales de derechos de importación en Honduras suelen oscilar entre el 0% y el 15% para la mayoría de los bienes. Sin embargo, verificar la tasa precisa y actual para un código SA específico requiere consultar el Arancel de Aduanas oficial hondureño. Acceder a este arancel oficial directamente a través de los sitios web del Servicio de Administración de Rentas (SAR) o la Administración Aduanera de Honduras a veces puede resultar desafiante para los usuarios en línea. Aunque existen bases de datos alternativas como el Mapa de Acceso a Mercados del ITC, estas pueden mostrar tasas de Nación Más Favorecida (NMF) en lugar de las tasas aplicadas específicamente, necesitando confirmación. Honduras forma parte de acuerdos de libre comercio (TLC), como el CAFTA-DR con Estados Unidos, que pueden ofrecer tasas arancelarias preferenciales (más bajas o cero) para mercancías calificadas, pero la elegibilidad depende del cumplimiento de reglas de origen específicas.</p>
-            </article>
+            <div class="cards-container">
+                <div class="card">
+                    <h3>Transporte Marítimo</h3>
+                    <p>Es la opción más económica, especialmente para grandes volúmenes de carga o mercancías no urgentes. Permite transportar una gran variedad de productos, desde materias primas hasta maquinaria pesada.</p>
+                    <h4>Puertos Clave:</h4>
+                    <p>Los envíos desde China (puertos como Shanghái, Ningbo, Shenzhen) suelen dirigirse a los principales puertos hondureños como Puerto Cortés y, en menor medida, Puerto Castilla o San Lorenzo.</p>
+                    <h4>Tipos de Servicios:</h4>
+                    <ul>
+                        <li>Contenedor Completo (FCL)</li>
+                        <li>Carga Consolidada (LCL)</li>
+                        <li>Roll-on/Roll-off (RoRo)</li>
+                        <li>Break Bulk</li>
+                        <li>Contenedores Especiales</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h3>Transporte Aéreo</h3>
+                    <p>Es el método más rápido, ideal para mercancías urgentes, de alto valor o perecederas. Reduce significativamente los tiempos de tránsito.</p>
+                    <h4>Aeropuertos Clave:</h4>
+                    <p>Los principales aeropuertos de carga en Honduras son el Aeropuerto Internacional Ramón Villeda Morales (San Pedro Sula) y el Aeropuerto Internacional Toncontín (Tegucigalpa).</p>
+                    <h4>Factores que Afectan el Costo:</h4>
+                    <ul>
+                        <li>Peso volumétrico</li>
+                        <li>Peso real</li>
+                        <li>Urgencia</li>
+                        <li>Tipo de mercancía</li>
+                        <li>Tarifas de las aerolíneas</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="costs" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Componentes Clave del Costo</h2>
+                <p>Entender los diversos cargos que contribuyen al costo total es esencial para gestionar eficazmente los gastos de importación.</p>
+            </div>
             
-            <article>
-                <h3>Impuesto Sobre Ventas Hondureño (ISV)</h3>
-                <p>Este es el equivalente hondureño al Impuesto al Valor Agregado (IVA) o Impuesto sobre Bienes y Servicios (GST). La tasa estándar aplicada a la venta e importación de la mayoría de los bienes y servicios es del 15%. Crucialmente, para las importaciones, el ISV se calcula sobre la suma del valor CIF más los Derechos Arancelarios a la Importación (DAI) evaluados. Esto significa que la base del impuesto sobre las ventas incluye el derecho de importación, componiendo efectivamente la carga fiscal. Ciertos bienes, como bebidas alcohólicas y productos de tabaco, están sujetos a una tasa de ISV más alta del 18%. Como se señaló anteriormente, Honduras aplica estos impuestos a prácticamente todas las importaciones comerciales debido a la falta de un umbral de valor de minimis.</p>
-            </article>
-
-            <article>
-                <h3>Honorarios del Agente Aduanero</h3>
-                <p>Son los cargos pagados a un agente aduanero hondureño licenciado por sus servicios en la gestión del proceso de despacho de importación. Los servicios típicamente incluyen preparar y presentar la declaración de aduanas, clasificar mercancías según el código SA, organizar los pagos de derechos e impuestos, actuar de enlace con las autoridades aduaneras y garantizar el cumplimiento de todas las regulaciones de importación. Los honorarios del agente pueden estructurarse como una tarifa plana por envío, un porcentaje del valor del envío o una combinación. Obtener datos precisos y actuales sobre los honorarios típicos de los agentes aduaneros específicamente en Honduras resultó difícil basándose en la información disponible; las estimaciones generales para otras regiones o las tendencias regionales ofrecen aplicabilidad directa limitada. Por lo tanto, las estimaciones para este componente conllevan menor confianza, y obtener cotizaciones directas de agentes hondureños es esencial.</p>
-            </article>
-
-            <article>
-                <h3>Tasas Portuarias/Aeroportuarias (Gastos Portuarios/Aeroportuarios)</h3>
-                <p>Estas tasas cubren el uso de instalaciones terminales y servicios de manejo en el puerto o aeropuerto de entrada hondureño. Para el flete marítimo que llega a puertos como Puerto Cortés, los cargos clave incluyen Cargos por Manejo de Terminal (THC), que cubren el costo de mover contenedores dentro de la terminal portuaria. Las tasas de THC pueden variar según el transportista, tipo de contenedor (20', 40', seco, reefer) y dirección (importación vs. exportación). Datos recientes sugieren que el THC de importación en Puerto Cortés podría rondar los $100 para un contenedor de 20' y $150 para uno de 40'. Las tasas de documentación, relacionadas con el procesamiento de manifiestos y otras tareas administrativas por parte del transportista o terminal, también son comunes, oscilando potencialmente entre $200-$250 por Conocimiento de Embarque (Bill of Lading). Pueden aplicarse cargos por almacenamiento (demora/detención) si la carga o los contenedores no se despachan y retiran dentro del tiempo libre asignado. Para el flete aéreo que llega a aeropuertos como San Pedro Sula (SAP), las tasas de manejo de carga son cobradas por agentes de manejo en tierra (como Swissport o Adimex) por servicios como descarga de aeronaves, manejo en almacén y procesamiento de documentos. Las tarifas específicas y actuales de manejo de carga para SAP no estaban fácilmente disponibles en las fuentes revisadas, haciendo necesaria la estimación.</p>
-            </article>
-
-            <article>
-                <h3>Tasas de Transporte Local (Transporte Local)</h3>
-                <p>Este componente cubre el costo de mover las mercancías importadas desde el puerto o aeropuerto de llegada hondureño hasta el destino final interior, como un almacén o local comercial en Tegucigalpa o San Pedro Sula. Para envíos FCL, esto típicamente implica el transporte por camión del contenedor completo. Para LCL y flete aéreo, implica transportar el envío de carga más pequeño. Los costos dependen significativamente de la distancia, el modo de transporte (camión dedicado, transportista LTL, courier), el peso y volumen de la carga, y el proveedor de transporte específico. Aunque existen algunos puntos de datos históricos para el transporte FCL (por ejemplo, las tarifas de Crowley de 2018 mostraban Puerto Cortés a San Pedro Sula a $275/contenedor y a Tegucigalpa a $895/contenedor), estos están significativamente desactualizados y probablemente mucho más altos hoy debido a la inflación y al aumento de los costos operativos. Transportistas como Maersk ofrecen servicios interiores pero típicamente requieren cotizaciones directas. Proveedores logísticos como HL Worldwide Logistics también ofrecen estos servicios sin tarifas publicadas. Los costos precisos para este segmento requieren cotizaciones específicas de proveedores de transporte locales.</p>
-            </article>
-        </section>
-        <!-- === END: NEW SECTION - Key Cost Components === -->
-
-        <!-- === START: NEW SECTION - Example A === -->
-        <section id="example-fcl">
-            <h2>III. Escenario A: FCL Marítimo - Muebles (Ejemplo Ilustrativo)</h2>
-            <p>Este escenario ilustra el costo estimado puesto en destino para un envío de Carga Completa de Contenedor (FCL) de bienes manufacturados comunes, específicamente muebles de madera, transportados por vía marítima desde un puerto principal chino hasta el puerto de contenedores principal de Honduras.</p>
-            <p style="font-weight:bold; color: #c00;">ADVERTENCIA: Las cifras a continuación son estimaciones basadas en datos de Abril 2025 y están sujetas a una volatilidad significativa. ¡Obtenga siempre cotizaciones formales para envíos reales!</p>
-
-            <h3>A.1. Parámetros del Escenario:</h3>
-            <table border="1" cellpadding="5" cellspacing="0" style="width:100%; border-collapse: collapse; margin-bottom: 15px;">
+            <table class="data-table">
                 <thead>
                     <tr>
-                        <th>Parámetro</th>
-                        <th>Valor/Detalles Asumidos</th>
+                        <th>Componente</th>
+                        <th>Descripción</th>
+                        <th>Rango Estimado</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Producto</td>
-                        <td>Juegos de Comedor de Madera</td>
+                        <td>Costo del Flete</td>
+                        <td>Cargo por el transporte físico de mercancías</td>
+                        <td>$3,500 - $4,500 (FCL 40')</td>
                     </tr>
                     <tr>
-                        <td>Código SA Asumido</td>
-                        <td>9403.60 (Otros muebles de madera)</td>
+                        <td>Seguro de Carga</td>
+                        <td>Cubre riesgo de pérdida o daño</td>
+                        <td>0.3% - 0.6% del valor</td>
                     </tr>
                     <tr>
-                        <td>Valor Asumido (FOB Shenzhen)</td>
-                        <td>USD 15,000</td>
+                        <td>Derechos Arancelarios (DAI)</td>
+                        <td>Impuesto a la importación</td>
+                        <td>10% - 15% del valor CIF</td>
                     </tr>
                     <tr>
-                        <td>Peso Asumido</td>
-                        <td>8,000 kg</td>
+                        <td>Impuesto Sobre Ventas (ISV)</td>
+                        <td>Equivalente al IVA</td>
+                        <td>15% de (CIF + DAI)</td>
                     </tr>
                     <tr>
-                        <td>Volumen/Contenedor Asumido</td>
-                        <td>1 x 40' High Cube (HC) Container</td>
+                        <td>Honorarios Agente Aduanero</td>
+                        <td>Servicios de gestión aduanera</td>
+                        <td>$150 - $400 por envío</td>
                     </tr>
                     <tr>
-                        <td>Origen</td>
-                        <td>Shenzhen, China (Puerto de Yantian - CNYTN)</td>
+                        <td>Tasas Portuarias</td>
+                        <td>Uso de instalaciones y servicios</td>
+                        <td>$350 - $500 por contenedor</td>
                     </tr>
                     <tr>
-                        <td>Destino</td>
-                        <td>Puerto Cortés, Honduras (HNPCR)</td>
-                    </tr>
-                     <tr>
-                        <td>Nivel de Servicio</td>
-                        <td>Puerto-a-Puerto + Tasas Locales Estimadas (Entrega ilustrativa a San Pedro Sula)</td>
-                    </tr>
-                    <tr>
-                        <td>Incoterms® 2020</td>
-                        <td>FOB Shenzhen</td>
+                        <td>Transporte Local</td>
+                        <td>Entrega final desde puerto/aeropuerto</td>
+                        <td>$300 - $500 (Puerto Cortés a SPS)</td>
                     </tr>
                 </tbody>
             </table>
-            <p style="font-size: 0.9em; margin-bottom: 15px;"><em>Nota: La selección del código SA 9403.60 es ilustrativa para "Otros muebles de madera". El código SA real podría diferir según el tipo específico y los materiales de los muebles, impactando significativamente la tasa arancelaria. Los Incoterms FOB (Free On Board) significan que el vendedor es responsable de los costos hasta que las mercancías se cargan en el buque en el puerto de origen; el comprador asume la responsabilidad del flete marítimo, seguro y todos los costos posteriores.</em></p>
             
-            <h3>A.2. Desglose Estimado del Costo Puesto en Destino:</h3>
-             <p style="font-size: 0.9em; margin-bottom: 15px;"><em>Estimaciones basadas en datos disponibles a Abril 2025. Los rangos se proporcionan donde existe variabilidad significativa. <strong>Estos son solo estimados ilustrativos.</strong></em></p>
-            <div style="overflow-x:auto;"> <!-- Added for table responsiveness -->
-                <table border="1" cellpadding="5" cellspacing="0" style="width:100%; border-collapse: collapse; margin-bottom: 15px; min-width: 800px;"> <!-- Added min-width -->
-                     <thead>
-                        <tr>
-                            <th>Componente de Costo</th>
-                            <th>Costo Estimado (Rango USD)</th>
-                            <th>Base de Estimación</th>
-                            <th>Fuente (Tipo/ID)</th>
-                            <th>Fecha Datos</th>
-                            <th>Confianza</th>
-                            <th>Notas</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Costo del Producto (FOB Shenzhen)</td>
-                            <td>$15,000</td>
-                            <td>Valor Asumido</td>
-                            <td>Parámetro Escenario</td>
-                            <td>N/A</td>
-                            <td>N/A</td>
-                            <td>Precio acordado con proveedor.</td>
-                        </tr>
-                         <tr>
-                            <td>Flete Marítimo (Yantian a P. Cortés)</td>
-                            <td>$3,500 - $4,500</td>
-                            <td>Tarifa Spot FCL por 40' HC</td>
-                            <td>Índices Mercado/Cotizaciones</td>
-                            <td>Abr 2025</td>
-                            <td>Media</td>
-                            <td>Altamente volátil. Refleja condiciones recientes mercado e indicaciones ruta específica. Tarifa real requiere cotización actual.</td>
-                        </tr>
-                        <tr>
-                            <td>Seguro de Carga</td>
-                            <td>$58 - $116</td>
-                            <td>0.3%-0.6% de (FOB + Flete + 10%)</td>
-                            <td>Promedio Industria</td>
-                            <td>Abr 2025</td>
-                            <td>Media</td>
-                            <td>Tasa depende de asegurador/cobertura. Calculado sobre FOB + Flete Medio ($4000).</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Subtotal: Valor CIF Estimado</strong></td>
-                            <td><strong>$18,558 - $19,616</strong></td>
-                            <td>Suma de FOB + Flete + Seguro</td>
-                            <td>Cálculo</td>
-                            <td>Abr 2025</td>
-                            <td>Media</td>
-                            <td>Base para cálculo de DAI e ISV.</td>
-                        </tr>
-                        <tr>
-                            <td>Derecho Importación Hondureño (DAI)</td>
-                            <td>$1,856 - $2,942</td>
-                            <td>Est. 10%-15% del Valor CIF</td>
-                            <td>Rango General; SA Asumido 9403.60</td>
-                            <td>Abr 2025</td>
-                            <td>Media</td>
-                            <td>Requiere verificación. Asume tasa 10-15% para SA 9403.60; tasa real depende de Arancel oficial.</td>
-                        </tr>
-                        <tr>
-                            <td>Impuesto Sobre Ventas Hondureño (ISV)</td>
-                            <td>$3,062 - $3,384</td>
-                            <td>15% de (CIF + DAI)</td>
-                            <td>Tasa Oficial</td>
-                            <td>Abr 2025</td>
-                            <td>Alta</td>
-                            <td>Tasa estándar 15% aplicada a valor aduanero + derecho.</td>
-                        </tr>
-                        <tr>
-                            <td>Honorarios Agente Aduanero</td>
-                            <td>$150 - $400</td>
-                            <td>Rango Estimado Tarifa Plana</td>
-                            <td>Estimación Industria</td>
-                            <td>Abr 2025</td>
-                            <td>Baja</td>
-                            <td>Requiere cotización. Muy variable; datos específicos limitados Honduras disponibles.</td>
-                        </tr>
-                        <tr>
-                            <td>Tasas Portuarias (Puerto Cortés)</td>
-                            <td>$356 - $492</td>
-                            <td>THC ($150/40') + Tasas Doc ($206-$242)</td>
-                            <td>Datos Transportista</td>
-                            <td>Ene 2025 Data</td>
-                            <td>Media</td>
-                            <td>Basado en cargos importación CMA CGM Ene 2025. Puede variar por transportista.</td>
-                        </tr>
-                        <tr>
-                            <td>Transporte Local (P. Cortés a San Pedro Sula)</td>
-                            <td>$300 - $500</td>
-                            <td>Por Contenedor Camión</td>
-                            <td>Extrapolación / Estimación</td>
-                            <td>Abr 2025 Estimate</td>
-                            <td>Baja</td>
-                            <td>Requiere cotización. Basado en tarifa desactualizada 2018 ($275) + aumento estimado. Distancia ~60km.</td>
-                        </tr>
-                         <tr>
-                            <td><strong>Total Estimado Costo Puesto en Destino (Rango)</strong></td>
-                            <td><strong>$24,282 - $27,334</strong></td>
-                            <td>Suma de FOB + Estimados Medios/Altos Variables</td>
-                            <td>Cálculo</td>
-                            <td>Abr 2025</td>
-                            <td>Baja-Media</td>
-                            <td><strong>Solamente Ilustrativo</strong></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div> <!-- End responsive wrapper -->
-            
-            <h3>A.3. Supuestos Clave y Descargos de Responsabilidad para Escenario A:</h3>
-            <ul>
-                <li><strong>Volatilidad del Flete:</strong> Las tarifas de flete marítimo están sujetas a cambios significativos y frecuentes. El rango proporcionado es indicativo para Abril 2025 pero requiere confirmación mediante una cotización específica.</li>
-                <li><strong>Código SA y Tasa Arancelaria:</strong> El código SA asumido (9403.60) y la tasa arancelaria estimada (10-15%) son supuestos críticos. El importador debe confirmar el código SA correcto y la tasa arancelaria vigente correspondiente del Arancel de Aduanas oficial hondureño o a través de un agente aduanero calificado.</li>
-                <li><strong>Incertidumbre de Costos Locales:</strong> Las estimaciones para los honorarios de agente aduanero y transporte interior tienen baja confianza debido a datos actuales limitados. Los costos reales podrían variar sustancialmente según los proveedores elegidos y las tarifas negociadas.</li>
-                <li><strong>Exclusiones:</strong> Esta estimación excluye costos potenciales como demoras (cargos por almacenamiento en puerto si el contenedor no se recoge puntualmente), detenciones (cargos por retener el contenedor más allá del tiempo libre asignado), tasas de inspección aduanera, costos de fumigación (si se requieren para embalajes de madera) u otros cargos imprevistos.</li>
-                 <li><strong>Especificidades del Producto:</strong> Se asume mobiliario de madera estándar que no requiere manejo especial ni permisos.</li>
-            </ul>
-             <p><strong>Recordatorio:</strong> Obtenga siempre cotizaciones formales y detalladas de transitarios y agentes aduaneros hondureños licenciados para presupuestos precisos.</p>
-        </section>
-        <!-- === END: NEW SECTION - Example A === -->
-
-        <section id="noticias">
-            <h2>Noticias y Contexto Relevante (Ejemplos Genéricos)</h2>
-            <p>Es crucial estar al tanto de factores externos que pueden afectar los envíos:</p>
-            <ul>
-                <li><strong>Relaciones Diplomáticas:</strong> La reciente apertura de relaciones diplomáticas entre Honduras y la República Popular China (marzo 2023) podría facilitar futuros acuerdos comerciales y potencialmente agilizar ciertos procesos, aunque los efectos prácticos pueden tardar en materializarse.</li>
-                <li><strong>Situación Logística Global:</strong> Eventos como la pandemia de COVID-19 demostraron cómo las disrupciones en las cadenas de suministro globales (congestión portuaria, escasez de contenedores, fluctuaciones en tarifas) pueden impactar los costos y tiempos de envío. Manténgase informado sobre la situación actual.</li>
-                <li><strong>Regulaciones Aduaneras:</strong> Las normativas de importación pueden cambiar. Verifique siempre los requisitos actuales con su agente aduanero o fuentes oficiales hondureñas (enlaces a SAR/Aduanas podrían añadirse aquí).</li>
-            </ul>
-        </section>
-
-        <section id="conclusion">
-            <h2>Conclusión y Recomendaciones Finales</h2>
-            <p>Enviar mercancías de China a Honduras requiere planificación cuidadosa y comprensión de todos los costos involucrados. Use la información y ejemplos en esta guía como punto de partida, pero siempre:</p>
-            <ol>
-                <li><strong>Verifique HS Codes y Tasas Arancelarias:</strong> Fundamental para una estimación precisa de impuestos. Consulte a un agente aduanero hondureño.</li>
-                <li><strong>Obtenga Cotizaciones Formales:</strong> Los costos de flete y servicios locales varían. Pida cotizaciones detalladas y actualizadas.</li>
-                <li><strong>Considere Todos los Componentes:</strong> No olvide seguro, honorarios de agente, tasas portuarias/aeroportuarias y transporte local.</li>
-                <li><strong>Planifique Contingencias:</strong> Tenga un margen para posibles retrasos, inspecciones o cargos inesperados.</li>
-                <li><strong>Trabaje con Profesionales:</strong> Un buen agente aduanero y transitario es esencial.</li>
-            </ol>
-            <p>La comunicación clara con su proveedor en China y su socio logístico en Honduras es clave para el éxito.</p>
-            <p>¿Listo para obtener una cotización específica? <a href="#contacto">Solicítela aquí</a>.</p>
-        </section>
-    </main>
-
-    <footer id="contacto">
-        <!-- Start: Quote Request Form -->
-        <h2>Solicitar Cotización Personalizada</h2>
-        <p>Complete los detalles a continuación para recibir una cotización de envío de China a Honduras a través de nuestros socios logísticos. Campos marcados con * son requeridos.</p>
-        
-        <form name="quote-request" method="POST" data-netlify="true" netlify-honeypot="bot-field" style="text-align: left; max-width: 600px; margin: 20px auto; padding: 20px; background-color: #f0f0f0; border-radius: 8px;">
-            
-            <!-- Netlify Honeypot field for spam prevention -->
-            <p style="display:none;">
-                <label>Don’t fill this out if you’re human: <input name="bot-field"></label>
-            </p>
-
-            <fieldset style="border: none; padding: 0; margin: 0 0 15px 0;">
-                <legend style="font-weight: bold; margin-bottom: 10px; font-size: 1.2em;">Información de Contacto</legend>
+            <div class="card">
+                <h3>Escenario Ilustrativo: FCL Marítimo - Muebles</h3>
+                <p>Este escenario ilustra el costo estimado puesto en destino para un envío de muebles de madera desde China a Honduras.</p>
                 
-                <p style="margin-bottom: 10px;">
-                    <label for="quote-name">Su Nombre:*</label><br>
-                    <input type="text" id="quote-name" name="name" required style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
-                </p>
-                <p style="margin-bottom: 10px;">
-                    <label for="quote-email">Su Email:*</label><br>
-                    <input type="email" id="quote-email" name="email" required style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
-                </p>
-                <p style="margin-bottom: 10px;">
-                    <label for="quote-phone">Su Teléfono:</label><br>
-                    <input type="tel" id="quote-phone" name="phone" style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
-                </p>
-                 <p style="margin-bottom: 10px;">
-                    <label for="quote-company">Su Compañía (Opcional):</label><br>
-                    <input type="text" id="quote-company" name="company" style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
-                </p>
-            </fieldset>
-
-            <fieldset style="border: none; padding: 0; margin: 0 0 15px 0;">
-                <legend style="font-weight: bold; margin-bottom: 10px; font-size: 1.2em;">Detalles del Envío</legend>
-
-                <p style="margin-bottom: 10px;">
-                    <label for="quote-origin">Origen en China:*</label> (Ciudad o Puerto)<br>
-                    <input type="text" id="quote-origin" name="origin_china" required style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
-                </p>
-                <p style="margin-bottom: 10px;">
-                    <label for="quote-destination">Destino en Honduras:*</label> (Ciudad o Dirección de Entrega)<br>
-                    <input type="text" id="quote-destination" name="destination_honduras" required style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
-                </p>
-                <p style="margin-bottom: 10px;">
-                    <label for="quote-commodity">Descripción del Producto:*</label> (Sea lo más específico posible)<br>
-                    <textarea id="quote-commodity" name="product_description" rows="3" required style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;"></textarea>
-                </p>
-                 <p style="margin-bottom: 10px;">
-                    <label for="quote-value">Valor Estimado de la Mercancía (USD):*</label><br>
-                    <input type="number" id="quote-value" name="value_usd" required min="0" step="0.01" style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
-                </p>
-            </fieldset>
-
-            <fieldset style="border: none; padding: 0; margin: 0 0 15px 0;">
-                <legend style="font-weight: bold; margin-bottom: 10px; font-size: 1.2em;">Peso y Dimensiones (Estimados)</legend>
-                <p style="font-size: 0.9em; margin-bottom: 10px;">Proporcione la mejor estimación posible. Puede indicar detalles por pieza o totales.</p>
-
-                <p style="margin-bottom: 10px;">
-                    <label for="quote-weight">Peso Bruto Total Estimado (kg):*</label><br>
-                    <input type="number" id="quote-weight" name="total_weight_kg" required min="0" step="0.1" style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
-                </p>
-                <p style="margin-bottom: 10px;">
-                    <label for="quote-volume">Volumen Total Estimado (CBM) o Dimensiones:</label> (Ej: 2 CBM, o 3 paquetes de 50x40x30cm)<br>
-                    <input type="text" id="quote-volume" name="volume_or_dimensions" style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
-                </p>
-                 <p style="margin-bottom: 10px;">
-                    <label for="quote-quantity">Cantidad de Paquetes/Cajas/Pallets:</label><br>
-                    <input type="text" id="quote-quantity" name="quantity_pieces" style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
-                </p>
-            </fieldset>
-
-             <fieldset style="border: none; padding: 0; margin: 0 0 15px 0;">
-                <legend style="font-weight: bold; margin-bottom: 10px; font-size: 1.2em;">Preferencias de Servicio</legend>
-
-                 <p style="margin-bottom: 10px;">
-                    <label for="quote-mode">Modo de Envío Preferido:*</label><br>
-                    <select id="quote-mode" name="shipping_mode" required style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
-                        <option value="">-- Seleccione --</option>
-                        <option value="Sea">Marítimo</option>
-                        <option value="Air">Aéreo</option>
-                        <option value="Unsure">No estoy seguro</option>
-                    </select>
-                </p>
-                 <p style="margin-bottom: 10px;">
-                    <label for="quote-sea-type">Si es Marítimo:</label><br>
-                    <select id="quote-sea-type" name="container_type" style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
-                        <option value="">-- Seleccione si aplica --</option>
-                        <option value="LCL">LCL (Carga Consolidada)</option>
-                        <option value="FCL_20ft">FCL (Contenedor 20 pies)</option>
-                        <option value="FCL_40ft">FCL (Contenedor 40 pies)</option>
-                         <option value="FCL_HQ">FCL (Contenedor 40 pies HQ)</option>
-                        <option value="Unsure">No estoy seguro</option>
-                    </select>
-                </p>
-                 <p style="margin-bottom: 10px;">
-                    <label for="quote-service-level">Nivel de Servicio Requerido:</label><br>
-                     <select id="quote-service-level" name="service_level" style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
-                        <option value="">-- Seleccione si aplica --</option>
-                        <option value="DoorToDoor">Puerta a Puerta</option>
-                        <option value="PortToPort">Puerto a Puerto</option>
-                         <option value="DoorToPort">Puerta a Puerto</option>
-                         <option value="PortToDoor">Puerto a Puerta</option>
-                        <option value="Unsure">No estoy seguro</option>
-                    </select>
-                </p>
-                 <p style="margin-bottom: 10px;">
-                    <label for="quote-incoterms">Incoterms (Opcional):</label> (Ej: EXW, FOB Shanghai)<br>
-                    <input type="text" id="quote-incoterms" name="incoterms" style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
-                </p>
-            </fieldset>
+                <h4>Parámetros:</h4>
+                <ul>
+                    <li>Producto: Juegos de Comedor de Madera</li>
+                    <li>Valor FOB: $15,000</li>
+                    <li>Peso: 8,000 kg</li>
+                    <li>Contenedor: 1 x 40' High Cube</li>
+                    <li>Origen: Shenzhen, China</li>
+                    <li>Destino: Puerto Cortés, Honduras</li>
+                </ul>
+                
+                <h4>Costo Total Estimado:</h4>
+                <p>$24,282 - $27,334</p>
+                
+                <p><strong>Nota:</strong> Estas cifras son estimaciones basadas en datos de Abril 2025 y están sujetas a cambios.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="transit-times" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Tiempos Estimados de Tránsito</h2>
+                <p>Planifique adecuadamente sus envíos conociendo los tiempos aproximados de transporte.</p>
+            </div>
             
-             <p style="margin-bottom: 10px;">
-                <label for="quote-additional-info">Información Adicional o Requerimientos Especiales:</label><br>
-                <textarea id="quote-additional-info" name="additional_info" rows="3" style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;"></textarea>
-            </p>
-
-            <p style="margin-bottom: 15px;">
-                <input type="checkbox" id="quote-consent" name="consent" value="yes" required style="margin-right: 5px;">
-                <label for="quote-consent">Acepto que mi información sea compartida con un socio logístico para obtener una cotización.*</label>
-            </p>
-
-            <p style="text-align: center;">
-                <button type="submit" style="padding: 12px 25px; background-color: #007bff; color: white; border: none; border-radius: 5px; font-size: 1.1em; cursor: pointer;">Enviar Solicitud de Cotización</button>
-            </p>
-
-        </form>
-        <!-- End: Quote Request Form -->
-
-        <!-- Existing footer content like email/phone/copyright -->
-        <hr style="margin-top: 30px;"> <!-- Added a separator -->
-        <p style="margin-top: 20px;">Email: info@ejemplo-agente.com | Teléfono: +504 1234-5678</p> 
-        <p>&copy; 2024 Guía de Envíos Honduras. Todos los derechos reservados.</p>
-    </footer/* === Styling for Added Sections and Tables === */
-
-/* General Styling for Tables */
-section table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
-    font-size: 0.9em; /* Slightly smaller text in tables */
-}
-
-/* Responsive wrapper for wide tables */
-.table-responsive-wrapper {
-     overflow-x: auto;
-     margin-bottom: 15px; /* Add some space below the scrolled table */
-}
-
-section th,
-section td {
-    border: 1px solid #ddd;
-    padding: 8px 10px;
-    text-align: left;
-    vertical-align: top; /* Align content top */
-}
-
-section th {
-    background-color: #f2f2f2; /* Light grey header */
-    font-weight: bold;
-    white-space: nowrap; /* Prevent headers from wrapping too easily */
-}
-
-/* Zebra striping for better readability */
-section tbody tr:nth-child(even) {
-    background-color: #f9f9f9;
-}
-
-/* Warning Paragraph Style */
-.warning-text {
-    font-weight: bold;
-    color: #c00; /* Red color for warnings */
-    background-color: #fff3f3; /* Light pink background */
-    padding: 10px;
-    border: 1px solid #c00;
-    border-radius: 4px;
-    margin-bottom: 15px;
-}
-
-
-/* === Quote Request Form Styling === */
-#quote-request-form {
-    max-width: 700px; /* Slightly wider */
-    margin: 30px auto; /* Center it */
-    padding: 25px 30px;
-    background-color: #f8f9fa; /* Lighter background */
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    text-align: left; /* Ensure text aligns left */
-    color: #333; /* Ensure good text contrast */
-}
-
-#quote-request-form fieldset {
-    border: 1px solid #ddd; /* Subtle border for grouping */
-    padding: 15px 20px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-}
-
-#quote-request-form legend {
-    font-weight: bold;
-    margin-bottom: 10px;
-    font-size: 1.2em;
-    color: #1a2a4d; /* Match header color */
-    padding: 0 5px; /* Avoid border cutting through legend */
-}
-
-#quote-request-form p {
-    margin-bottom: 15px; /* Consistent spacing */
-}
-
-#quote-request-form label {
-    display: block; /* Each label on its own line */
-    margin-bottom: 5px;
-    font-weight: 600; /* Slightly bolder labels */
-    color: #495057;
-}
-
-/* Style for required field asterisks */
-#quote-request-form label:after {
-    content: "*";
-    color: red;
-    margin-left: 3px;
-    /* Only show for labels that have a required input immediately following */
-    /* This is a bit tricky without JS, manually added * to label text is easier */
-}
-/* Simpler: Ensure required text labels have the asterisk manually added */
-
-#quote-request-form input[type="text"],
-#quote-request-form input[type="email"],
-#quote-request-form input[type="tel"],
-#quote-request-form input[type="number"],
-#quote-request-form textarea,
-#quote-request-form select {
-    width: 100%;
-    padding: 10px; /* More padding */
-    border: 1px solid #ced4da;
-    border-radius: 4px;
-    font-size: 1rem;
-    box-sizing: border-box; /* Include padding and border in width */
-    margin-top: 3px;
-}
-
-#quote-request-form textarea {
-    resize: vertical; /* Allow vertical resize */
-    min-height: 80px;
-}
-
-#quote-request-form .form-hint {
-    font-size: 0.9em;
-    color: #6c757d;
-    margin-top: -10px; /* Adjust spacing */
-}
-
-#quote-request-form .consent-checkbox {
-    display: flex;
-    align-items: center; /* Align checkbox and label */
-    margin-bottom: 20px;
-}
-
-#quote-request-form .consent-checkbox input[type="checkbox"] {
-    width: auto; /* Don't make checkbox full width */
-    margin-right: 10px; 
-    flex-shrink: 0;
-}
-#quote-request-form .consent-checkbox label {
-    margin-bottom: 0; /* Reset margin for inline label */
-    font-weight: normal; /* Normal weight for consent text */
-}
-
-#quote-request-form .submit-button-container {
-    text-align: center;
-    margin-top: 20px;
-}
-
-#quote-request-form button[type="submit"] {
-    padding: 12px 30px;
-    background-color: #0056b3; /* Darker blue */
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.1em;
-    cursor: pointer;
-    transition: background-color 0.2s ease;
-}
-
-#quote-request-form button[type="submit"]:hover {
-    background-color: #004494; /* Slightly darker on hover */
-}
-
-/* Honeypot should be hidden */
-.hidden-honeypot {
-    position: absolute;
-    left: -5000px; /* Move off-screen */
-    visibility: hidden;
-}
-
-/* Optional: Adjust table styling within media query if needed */
-@media (max-width: 768px) {
-    #quote-request-form {
-        padding: 20px 15px;
-    }
-
-    section th, section td {
-        padding: 6px 8px; /* Slightly smaller padding on mobile */
-    }
-    /* The table-responsive-wrapper div will handle horizontal scrolling */
-}>
-
-    <script src="scriptchina.js"></script> 
+            <div class="cards-container">
+                <div class="card">
+                    <h3>Transporte Marítimo</h3>
+                    <p>Generalmente entre 30 y 45 días desde los principales puertos chinos hasta Puerto Cortés. Esto puede variar según la ruta, las escalas y la congestión portuaria.</p>
+                </div>
+                
+                <div class="card">
+                    <h3>Transporte Aéreo</h3>
+                    <p>Típicamente entre 5 y 10 días, incluyendo los procesos en origen y destino. Es mucho más rápido pero considerablemente más caro.</p>
+                </div>
+                
+                <div class="card">
+                    <h3>Servicio Puerta a Puerta</h3>
+                    <p>Muchos transitarios (freight forwarders) ofrecen servicios "puerta a puerta". Esto significa que se encargan de todo el proceso desde la recolección hasta la entrega final.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="quote" class="form-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Solicitar Cotización Personalizada</h2>
+                <p>Complete los detalles a continuación para recibir una cotización de envío de China a Honduras a través de nuestros socios logísticos.</p>
+            </div>
+            
+            <div class="form-container">
+                <form action="#" method="post">
+                    <h3>Información de Contacto</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Su Nombre:*</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Su Email:*</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Su Teléfono:</label>
+                            <input type="tel" id="phone" name="phone" class="form-control">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="company">Su Compañía (Opcional):</label>
+                            <input type="text" id="company" name="company" class="form-control">
+                        </div>
+                    </div>
+                    
+                    <h3>Detalles del Envío</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="origin">Origen en China:*</label>
+                            <input type="text" id="origin" name="origin" class="form-control" placeholder="Ciudad o Puerto" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="destination">Destino en Honduras:*</label>
+                            <input type="text" id="destination" name="destination" class="form-control" placeholder="Ciudad o Dirección de Entrega" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="product">Descripción del Producto:*</label>
+                        <textarea id="product" name="product" class="form-control" rows="3" placeholder="Sea lo más específico posible" required></textarea>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="value">Valor Estimado de la Mercancía (USD):*</label>
+                            <input type="number" id="value" name="value" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="weight">Peso Bruto Total Estimado (kg):*</label>
+                            <input type="number" id="weight" name="weight" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="volume">Volumen Total Estimado (CBM) o Dimensiones:</label>
+                            <input type="text" id="volume" name="volume" class="form-control" placeholder="Ej: 2 CBM, o 3 paquetes de 50x40x30cm">
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="shipping_mode">Modo de Envío Preferido:*</label>
+                            <select id="shipping_mode" name="shipping_mode" class="form-control" required>
+                                <option value="">-- Seleccione --</option>
+                                <option value="maritime">Marítimo</option>
+                                <option value="air">Aéreo</option>
+                                <option value="any">Cualquiera (recomendar más económico)</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="maritime_type">Si es Marítimo:</label>
+                            <select id="maritime_type" name="maritime_type" class="form-control">
+                                <option value="">-- Seleccione si aplica --</option>
+                                <option value="fcl">Contenedor Completo (FCL)</option>
+                                <option value="lcl">Carga Consolidada (LCL)</option>
+                                <option value="roro">Roll-on/Roll-off (RoRo)</option>
+                                <option value="bulk">Break Bulk</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="additional">Información Adicional o Requerimientos Especiales:</label>
+                        <textarea id="additional" name="additional" class="form-control" rows="3"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms">Acepto que mi información sea compartida con un socio logístico para obtener una cotización.*</label>
+                    </div>
+                    
+                    <button type="submit" class="btn">Enviar Solicitud de Cotización</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>China-Honduras Trade Network</h3>
+                    <p>Su aliado confiable para la importación desde China a Honduras. Ofrecemos soluciones logísticas integrales adaptadas a sus necesidades.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="#shipping-methods">Métodos de Envío</a></li>
+                        <li><a href="#costs">Costos</a></li>
+                        <li><a href="#transit-times">Tiempos de Tránsito</a></li>
+                        <li><a href="#quote">Solicitar Cotización</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contáctenos</h3>
+                    <ul class="footer-links">
+                        <li>Email: info@chinahonduras.com</li>
+                        <li>Teléfono: +504 1234-5678</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 China-Honduras Trade Network. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
