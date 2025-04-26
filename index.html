@@ -1,723 +1,294 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>China-Honduras Trade Network | Shipping Guide</title>
-    <style>
-        /* Bloomberg-inspired styling */
-        :root {
-            --black: #000000;
-            --dark-gray: #333333;
-            --medium-gray: #666666;
-            --light-gray: #f2f2f2;
-            --white: #ffffff;
-            --accent: #0068B3;
-            --secondary-accent: #FF7100;
-            --success: #0b7261;
-            --warning: #ffa000;
+    <meta name="description" content="Comprehensive coverage of China-Honduras trade relations, logistics, economic partnerships and geopolitical impact.">
+    <title>China-Honduras Trade Network | Critical Analysis of Trade Relations</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Source+Serif+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="canonical" href="https://chinahondurastradenetwork.netlify.app/">
+    
+    <!-- Schema.org markup for Google News -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "NewsArticle",
+      "headline": "Guía Completa para el Envío de Mercancías de China a Honduras",
+      "image": [
+        "https://chinahondurastradenetwork.netlify.app/images/shipping-container.jpg"
+      ],
+      "datePublished": "2025-04-25T02:06:00+00:00",
+      "dateModified": "2025-04-25T02:06:00+00:00",
+      "author": {
+        "@type": "Person",
+        "name": "Trade Analysis Team",
+        "url": "https://chinahondurastradenetwork.netlify.app/about-us/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "China-Honduras Trade Network",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://chinahondurastradenetwork.netlify.app/images/logo.png"
         }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-        }
-        
-        body {
-            color: var(--dark-gray);
-            line-height: 1.6;
-            background-color: var(--white);
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        
-        header {
-            background-color: var(--black);
-            padding: 15px 0;
-            border-bottom: 2px solid var(--accent);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        
-        .header-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .logo {
-            color: var(--white);
-            font-weight: 700;
-            font-size: 1.5rem;
-            text-decoration: none;
-        }
-        
-        .logo span {
-            color: var(--accent);
-        }
-        
-        nav ul {
-            display: flex;
-            list-style: none;
-        }
-        
-        nav ul li {
-            margin-left: 25px;
-        }
-        
-        nav ul li a {
-            color: var(--white);
-            text-decoration: none;
-            font-size: 0.9rem;
-            font-weight: 500;
-            letter-spacing: 0.5px;
-            transition: color 0.3s;
-        }
-        
-        nav ul li a:hover {
-            color: var(--accent);
-        }
-        
-        .market-strip {
-            background-color: var(--light-gray);
-            padding: 10px 0;
-            border-bottom: 1px solid #e0e0e0;
-            font-size: 0.9rem;
-        }
-        
-        .ticker-container {
-            display: flex;
-            overflow-x: auto;
-            white-space: nowrap;
-            -ms-overflow-style: none;
-            scrollbar-width: none;
-        }
-        
-        .ticker-container::-webkit-scrollbar {
-            display: none;
-        }
-        
-        .ticker-item {
-            margin-right: 25px;
-            display: flex;
-            align-items: center;
-        }
-        
-        .ticker-name {
-            font-weight: 600;
-            margin-right: 8px;
-        }
-        
-        .ticker-value {
-            margin-right: 5px;
-        }
-        
-        .ticker-change.positive {
-            color: var(--success);
-        }
-        
-        .ticker-change.negative {
-            color: #d32f2f;
-        }
-        
-        .hero {
-            background-color: var(--light-gray);
-            padding: 50px 0;
-            border-bottom: 1px solid #e0e0e0;
-        }
-        
-        .hero-content {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        
-        .hero-text {
-            flex: 1;
-            padding-right: 50px;
-        }
-        
-        .hero-text h1 {
-            font-size: 2.5rem;
-            font-weight: 800;
-            margin-bottom: 15px;
-            line-height: 1.2;
-            color: var(--black);
-        }
-        
-        .hero-text p {
-            font-size: 1.1rem;
-            color: var(--medium-gray);
-            margin-bottom: 25px;
-        }
-        
-        .hero-cta {
-            display: inline-block;
-            background-color: var(--accent);
-            color: var(--white);
-            padding: 12px 25px;
-            border-radius: 4px;
-            font-weight: 600;
-            text-decoration: none;
-            transition: background-color 0.3s;
-        }
-        
-        .hero-cta:hover {
-            background-color: #005394;
-        }
-        
-        .section {
-            padding: 60px 0;
-            border-bottom: 1px solid #e0e0e0;
-        }
-        
-        .section-header {
-            text-align: left;
-            margin-bottom: 40px;
-        }
-        
-        .section-header h2 {
-            font-size: 1.8rem;
-            font-weight: 700;
-            color: var(--black);
-            margin-bottom: 10px;
-            position: relative;
-            display: inline-block;
-        }
-        
-        .section-header h2:after {
-            content: '';
-            position: absolute;
-            bottom: -8px;
-            left: 0;
-            width: 40px;
-            height: 3px;
-            background-color: var(--accent);
-        }
-        
-        .section-header p {
-            color: var(--medium-gray);
-            font-size: 1.1rem;
-        }
-        
-        .card {
-            background-color: var(--white);
-            border-radius: 4px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-            padding: 30px;
-            margin-bottom: 30px;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-        
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-        
-        .card h3 {
-            font-size: 1.3rem;
-            font-weight: 700;
-            margin-bottom: 15px;
-            color: var(--black);
-        }
-        
-        .card p {
-            color: var(--medium-gray);
-            margin-bottom: 20px;
-        }
-        
-        .cards-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-            gap: 30px;
-        }
-        
-        .data-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 30px;
-        }
-        
-        .data-table th, .data-table td {
-            padding: 12px 15px;
-            text-align: left;
-            border-bottom: 1px solid #e0e0e0;
-        }
-        
-        .data-table th {
-            background-color: var(--light-gray);
-            font-weight: 600;
-            color: var(--black);
-        }
-        
-        .data-table tr:hover {
-            background-color: #f8f8f8;
-        }
-        
-        .form-section {
-            background-color: var(--light-gray);
-            padding: 60px 0;
-        }
-        
-        .form-container {
-            background-color: var(--white);
-            padding: 40px;
-            border-radius: 4px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-        }
-        
-        .form-row {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 20px;
-            margin-bottom: 20px;
-        }
-        
-        .form-group {
-            margin-bottom: 15px;
-        }
-        
-        .form-group label {
-            display: block;
-            font-weight: 600;
-            margin-bottom: 5px;
-            color: var(--dark-gray);
-        }
-        
-        .form-control {
-            width: 100%;
-            padding: 12px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            font-size: 1rem;
-            transition: border-color 0.3s;
-        }
-        
-        .form-control:focus {
-            border-color: var(--accent);
-            outline: none;
-        }
-        
-        .btn {
-            display: inline-block;
-            background-color: var(--accent);
-            color: var(--white);
-            border: none;
-            padding: 12px 25px;
-            font-size: 1rem;
-            font-weight: 600;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-        
-        .btn:hover {
-            background-color: #005394;
-        }
-        
-        .footer {
-            background-color: var(--black);
-            color: var(--white);
-            padding: 50px 0 20px;
-        }
-        
-        .footer-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 30px;
-            margin-bottom: 40px;
-        }
-        
-        .footer-column h3 {
-            font-size: 1.2rem;
-            margin-bottom: 20px;
-            color: var(--white);
-        }
-        
-        .footer-links {
-            list-style: none;
-        }
-        
-        .footer-links li {
-            margin-bottom: 10px;
-        }
-        
-        .footer-links a {
-            color: #bbb;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-        
-        .footer-links a:hover {
-            color: var(--white);
-        }
-        
-        .copyright {
-            text-align: center;
-            color: #bbb;
-            padding-top: 20px;
-            border-top: 1px solid #444;
-        }
-        
-        @media (max-width: 768px) {
-            .hero-content {
-                flex-direction: column;
-            }
-            
-            .hero-text {
-                padding-right: 0;
-                margin-bottom: 30px;
-            }
-            
-            .cards-container {
-                grid-template-columns: 1fr;
-            }
-            
-            nav ul {
-                display: none;
-            }
-        }
-    </style>
+      },
+      "description": "Navegar el proceso de importación desde China puede ser complejo. Esta guía detalla los métodos, costos, tiempos y consideraciones clave para enviar sus productos a Honduras de manera eficiente.",
+      "isAccessibleForFree": "True",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://chinahondurastradenetwork.netlify.app/guia-completa-envio-mercancias-china-honduras/"
+      }
+    }
+    </script>
+    
+    <!-- Organization Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "China-Honduras Trade Network",
+      "url": "https://chinahondurastradenetwork.netlify.app",
+      "logo": "https://chinahondurastradenetwork.netlify.app/images/logo.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+504-1234-5678",
+        "contactType": "Customer Service",
+        "email": "info@chinahondurastradenetwork.com"
+      },
+      "sameAs": [
+        "https://twitter.com/CHTradeNetwork",
+        "https://linkedin.com/company/china-honduras-trade-network"
+      ]
+    }
+    </script>
 </head>
 <body>
-    <header>
-        <div class="container header-container">
-            <a href="#" class="logo">China-Honduras <span>Trade Network</span></a>
-            <nav>
-                <ul>
-                    <li><a href="#shipping-methods">Métodos de Envío</a></li>
-                    <li><a href="#costs">Costos</a></li>
-                    <li><a href="#transit-times">Tiempos de Tránsito</a></li>
-                    <li><a href="#quote">Solicitar Cotización</a></li>
+    <header class="site-header">
+        <div class="header-inner container">
+            <div class="logo">
+                <a href="/">
+                    <span class="site-title">China-Honduras Trade Network</span>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <button class="menu-toggle" aria-expanded="false">
+                    <span class="sr-only">Menu</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <ul class="menu">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/analysis/">Critical Analysis</a></li>
+                    <li><a href="/logistics/">Logistics & Shipping</a></li>
+                    <li><a href="/data/">Trade Data</a></li>
+                    <li><a href="/about-us/">About Us</a></li>
+                    <li><a href="/contact/">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     
-    <div class="market-strip">
-        <div class="container">
-            <div class="ticker-container">
-                <div class="ticker-item">
-                    <span class="ticker-name">Flete China-Honduras</span>
-                    <span class="ticker-value">$3,500 - $4,500</span>
-                    <span class="ticker-change positive">↑ 2.4%</span>
-                </div>
-                <div class="ticker-item">
-                    <span class="ticker-name">Tasa DAI</span>
-                    <span class="ticker-value">10% - 15%</span>
-                    <span class="ticker-change negative">↓ 0.5%</span>
-                </div>
-                <div class="ticker-item">
-                    <span class="ticker-name">ISV</span>
-                    <span class="ticker-value">15%</span>
-                    <span class="ticker-change">Sin cambios</span>
-                </div>
-                <div class="ticker-item">
-                    <span class="ticker-name">Tiempo de Tránsito</span>
-                    <span class="ticker-value">30-45 días</span>
-                    <span class="ticker-change negative">↓ 2 días</span>
-                </div>
+    <main class="site-content">
+        <section class="featured-article container">
+            <div class="article-meta">
+                <span class="category">Logistics & Shipping</span>
+                <span class="date">April 25, 2025</span>
             </div>
-        </div>
-    </div>
-    
-    <section class="hero">
-        <div class="container hero-content">
-            <div class="hero-text">
-                <h1>Guía Completa para el Envío de Mercancías de China a Honduras</h1>
-                <p>Navegar el proceso de importación desde China puede ser complejo. Esta guía detalla los métodos, costos, tiempos y consideraciones clave para enviar sus productos a Honduras de manera eficiente.</p>
-                <a href="#quote" class="hero-cta">Solicitar Cotización</a>
+            <h1 class="article-title">Guía Completa para el Envío de Mercancías de China a Honduras</h1>
+            <p class="author">By <a href="/authors/trade-analysis-team/">Trade Analysis Team</a></p>
+            
+            <div class="featured-image">
+                <img src="images/shipping-container.jpg" alt="Container ship loaded with cargo from China to Honduras" width="1200" height="630">
             </div>
-        </div>
-    </section>
-    
-    <section id="shipping-methods" class="section">
-        <div class="container">
-            <div class="section-header">
+            
+            <div class="article-content">
+                <p class="article-lead">Navegar el proceso de importación desde China puede ser complejo. Esta guía detalla los métodos, costos, tiempos y consideraciones clave para enviar sus productos a Honduras de manera eficiente.</p>
+                
                 <h2>Métodos de Envío Principales</h2>
-                <p>Existen dos modalidades principales para transportar mercancías desde China a Honduras.</p>
-            </div>
-            
-            <div class="cards-container">
-                <div class="card">
-                    <h3>Transporte Marítimo</h3>
-                    <p>Es la opción más económica, especialmente para grandes volúmenes de carga o mercancías no urgentes. Permite transportar una gran variedad de productos, desde materias primas hasta maquinaria pesada.</p>
-                    <h4>Puertos Clave:</h4>
-                    <p>Los envíos desde China (puertos como Shanghái, Ningbo, Shenzhen) suelen dirigirse a los principales puertos hondureños como Puerto Cortés y, en menor medida, Puerto Castilla o San Lorenzo.</p>
-                    <h4>Tipos de Servicios:</h4>
+                <p>Existen dos modalidades principales para transportar mercancías desde China a Honduras: el transporte marítimo y el transporte aéreo.</p>
+                
+                <h3>Transporte Marítimo</h3>
+                <p>Ventajas: Es la opción más económica, especialmente para grandes volúmenes de carga o mercancías no urgentes. Permite transportar una gran variedad de productos, desde materias primas hasta maquinaria pesada.</p>
+                
+                <p>Puertos Clave: Los envíos desde China (puertos como Shanghái, Ningbo, Shenzhen) suelen dirigirse a los principales puertos hondureños como Puerto Cortés y, en menor medida, Puerto Castilla o San Lorenzo.</p>
+                
+                <div class="info-box">
+                    <h4>Tipos de Servicios Marítimos:</h4>
                     <ul>
-                        <li>Contenedor Completo (FCL)</li>
-                        <li>Carga Consolidada (LCL)</li>
-                        <li>Roll-on/Roll-off (RoRo)</li>
-                        <li>Break Bulk</li>
-                        <li>Contenedores Especiales</li>
+                        <li><strong>Contenedor Completo (FCL - Full Container Load):</strong> Ideal para cargas que llenan un contenedor de 20 o 40 pies. Ofrece exclusividad y menor riesgo de daños.</li>
+                        <li><strong>Carga Consolidada (LCL - Less than Container Load):</strong> Para envíos más pequeños que no llenan un contenedor completo.</li>
+                        <li><strong>Roll-on/Roll-off (RoRo):</strong> Para vehículos y maquinaria pesada que pueden rodar sobre y fuera del barco.</li>
                     </ul>
                 </div>
                 
-                <div class="card">
-                    <h3>Transporte Aéreo</h3>
-                    <p>Es el método más rápido, ideal para mercancías urgentes, de alto valor o perecederas. Reduce significativamente los tiempos de tránsito.</p>
-                    <h4>Aeropuertos Clave:</h4>
-                    <p>Los principales aeropuertos de carga en Honduras son el Aeropuerto Internacional Ramón Villeda Morales (San Pedro Sula) y el Aeropuerto Internacional Toncontín (Tegucigalpa).</p>
-                    <h4>Factores que Afectan el Costo:</h4>
-                    <ul>
-                        <li>Peso volumétrico</li>
-                        <li>Peso real</li>
-                        <li>Urgencia</li>
-                        <li>Tipo de mercancía</li>
-                        <li>Tarifas de las aerolíneas</li>
-                    </ul>
+                <h3>Transporte Aéreo</h3>
+                <p>Ventajas: Es el método más rápido, ideal para mercancías urgentes, de alto valor o perecederas. Reduce significativamente los tiempos de tránsito.</p>
+                
+                <p>Aeropuertos Clave: Los principales aeropuertos de carga en Honduras son el Aeropuerto Internacional Ramón Villeda Morales (San Pedro Sula) y el Aeropuerto Internacional Toncontín (Tegucigalpa).</p>
+                
+                <div class="table-container">
+                    <h3>Costos Estimados y Factores Clave (General)</h3>
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Componente</th>
+                                <th>Descripción</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Flete (Marítimo o Aéreo)</td>
+                                <td>Varía según volumen, peso, ruta y temporada</td>
+                            </tr>
+                            <tr>
+                                <td>Seguro de Carga</td>
+                                <td>0.3%-0.6% del valor de la mercancía + flete</td>
+                            </tr>
+                            <tr>
+                                <td>Impuestos y Aranceles</td>
+                                <td>DAI (10%-15%) + ISV (15%)</td>
+                            </tr>
+                            <tr>
+                                <td>Gastos Portuarios</td>
+                                <td>$150-$500 dependiendo del contenedor</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-            </div>
-        </div>
-    </section>
-    
-    <section id="costs" class="section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Componentes Clave del Costo</h2>
-                <p>Entender los diversos cargos que contribuyen al costo total es esencial para gestionar eficazmente los gastos de importación.</p>
-            </div>
-            
-            <table class="data-table">
-                <thead>
-                    <tr>
-                        <th>Componente</th>
-                        <th>Descripción</th>
-                        <th>Rango Estimado</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Costo del Flete</td>
-                        <td>Cargo por el transporte físico de mercancías</td>
-                        <td>$3,500 - $4,500 (FCL 40')</td>
-                    </tr>
-                    <tr>
-                        <td>Seguro de Carga</td>
-                        <td>Cubre riesgo de pérdida o daño</td>
-                        <td>0.3% - 0.6% del valor</td>
-                    </tr>
-                    <tr>
-                        <td>Derechos Arancelarios (DAI)</td>
-                        <td>Impuesto a la importación</td>
-                        <td>10% - 15% del valor CIF</td>
-                    </tr>
-                    <tr>
-                        <td>Impuesto Sobre Ventas (ISV)</td>
-                        <td>Equivalente al IVA</td>
-                        <td>15% de (CIF + DAI)</td>
-                    </tr>
-                    <tr>
-                        <td>Honorarios Agente Aduanero</td>
-                        <td>Servicios de gestión aduanera</td>
-                        <td>$150 - $400 por envío</td>
-                    </tr>
-                    <tr>
-                        <td>Tasas Portuarias</td>
-                        <td>Uso de instalaciones y servicios</td>
-                        <td>$350 - $500 por contenedor</td>
-                    </tr>
-                    <tr>
-                        <td>Transporte Local</td>
-                        <td>Entrega final desde puerto/aeropuerto</td>
-                        <td>$300 - $500 (Puerto Cortés a SPS)</td>
-                    </tr>
-                </tbody>
-            </table>
-            
-            <div class="card">
-                <h3>Escenario Ilustrativo: FCL Marítimo - Muebles</h3>
-                <p>Este escenario ilustra el costo estimado puesto en destino para un envío de muebles de madera desde China a Honduras.</p>
                 
-                <h4>Parámetros:</h4>
-                <ul>
-                    <li>Producto: Juegos de Comedor de Madera</li>
-                    <li>Valor FOB: $15,000</li>
-                    <li>Peso: 8,000 kg</li>
-                    <li>Contenedor: 1 x 40' High Cube</li>
-                    <li>Origen: Shenzhen, China</li>
-                    <li>Destino: Puerto Cortés, Honduras</li>
-                </ul>
-                
-                <h4>Costo Total Estimado:</h4>
-                <p>$24,282 - $27,334</p>
-                
-                <p><strong>Nota:</strong> Estas cifras son estimaciones basadas en datos de Abril 2025 y están sujetas a cambios.</p>
-            </div>
-        </div>
-    </section>
-    
-    <section id="transit-times" class="section">
-        <div class="container">
-            <div class="section-header">
                 <h2>Tiempos Estimados de Tránsito</h2>
-                <p>Planifique adecuadamente sus envíos conociendo los tiempos aproximados de transporte.</p>
+                <p>Transporte Marítimo: Generalmente entre 30 y 45 días desde los principales puertos chinos hasta Puerto Cortés.</p>
+                <p>Transporte Aéreo: Típicamente entre 5 y 10 días, incluyendo los procesos en origen y destino.</p>
+                
+                <div class="expert-analysis">
+                    <h3>Análisis Crítico: Contexto Político-Económico</h3>
+                    <p>La reciente apertura de relaciones diplomáticas entre Honduras y la República Popular China (marzo 2023) representa un cambio significativo en la dinámica comercial regional. Este giro geopolítico debe entenderse en el contexto de la expansión de la iniciativa de la Franja y la Ruta de China en América Latina, y el progresivo desplazamiento de la influencia tradicional de Estados Unidos y Taiwán en la región.</p>
+                    <p>Los desarrollos de infraestructura logística, como la modernización de Puerto Cortés bajo este nuevo marco de relaciones, podrían alterar sustancialmente los costos y tiempos presentados en esta guía en los próximos años, generalmente favoreciendo a importadores hondureños con mejores condiciones.</p>
+                </div>
+                
+                <div class="article-cta">
+                    <h3>¿Listo para obtener una cotización específica?</h3>
+                    <a href="/contact/" class="button">Solicitar Cotización Personalizada</a>
+                </div>
+            </div>
+        </section>
+        
+        <section class="recent-articles container">
+            <h2 class="section-title">Análisis Recientes</h2>
+            <div class="articles-grid">
+                <article class="card">
+                    <a href="/analysis/implicaciones-relaciones-diplomaticas-china-honduras/" class="card-link">
+                        <div class="card-image">
+                            <img src="images/diplomatic-relations.jpg" alt="Officials from China and Honduras signing diplomatic agreements" width="400" height="225">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Implicaciones Económicas del Establecimiento de Relaciones Diplomáticas China-Honduras</h3>
+                            <p class="card-excerpt">Un análisis de los primeros impactos comerciales tras el cambio de reconocimiento diplomático de Taiwán a China.</p>
+                            <div class="card-meta">
+                                <span class="date">April 20, 2025</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+                
+                <article class="card">
+                    <a href="/logistics/comparativa-costos-puertas-entrada-honduras/" class="card-link">
+                        <div class="card-image">
+                            <img src="images/puerto-cortes.jpg" alt="Aerial view of Puerto Cortés, Honduras" width="400" height="225">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Comparativa: Costos y Eficiencia de las Principales Puertas de Entrada a Honduras</h3>
+                            <p class="card-excerpt">Análisis detallado de las ventajas comparativas entre Puerto Cortés, Puerto Castilla y los principales aeropuertos para importaciones.</p>
+                            <div class="card-meta">
+                                <span class="date">April 18, 2025</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+                
+                <article class="card">
+                    <a href="/data/estadisticas-comercio-trimestre-1-2025/" class="card-link">
+                        <div class="card-image">
+                            <img src="images/trade-data.jpg" alt="Graph showing increasing trade volumes between China and Honduras" width="400" height="225">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Estadísticas de Comercio China-Honduras: Primer Trimestre 2025</h3>
+                            <p class="card-excerpt">Visualización y análisis de los datos comerciales más recientes, revelando un incremento del 34% en exportaciones hondureñas a China.</p>
+                            <div class="card-meta">
+                                <span class="date">April 15, 2025</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
             </div>
             
-            <div class="cards-container">
-                <div class="card">
-                    <h3>Transporte Marítimo</h3>
-                    <p>Generalmente entre 30 y 45 días desde los principales puertos chinos hasta Puerto Cortés. Esto puede variar según la ruta, las escalas y la congestión portuaria.</p>
-                </div>
-                
-                <div class="card">
-                    <h3>Transporte Aéreo</h3>
-                    <p>Típicamente entre 5 y 10 días, incluyendo los procesos en origen y destino. Es mucho más rápido pero considerablemente más caro.</p>
-                </div>
-                
-                <div class="card">
-                    <h3>Servicio Puerta a Puerta</h3>
-                    <p>Muchos transitarios (freight forwarders) ofrecen servicios "puerta a puerta". Esto significa que se encargan de todo el proceso desde la recolección hasta la entrega final.</p>
-                </div>
+            <div class="view-more">
+                <a href="/archive/" class="button secondary">Ver Más Artículos</a>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
     
-    <section id="quote" class="form-section">
+    <aside class="newsletter-signup">
         <div class="container">
-            <div class="section-header">
-                <h2>Solicitar Cotización Personalizada</h2>
-                <p>Complete los detalles a continuación para recibir una cotización de envío de China a Honduras a través de nuestros socios logísticos.</p>
-            </div>
-            
-            <div class="form-container">
-                <form action="#" method="post">
-                    <h3>Información de Contacto</h3>
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="name">Su Nombre:*</label>
-                            <input type="text" id="name" name="name" class="form-control" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="email">Su Email:*</label>
-                            <input type="email" id="email" name="email" class="form-control" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="phone">Su Teléfono:</label>
-                            <input type="tel" id="phone" name="phone" class="form-control">
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="company">Su Compañía (Opcional):</label>
-                            <input type="text" id="company" name="company" class="form-control">
-                        </div>
-                    </div>
-                    
-                    <h3>Detalles del Envío</h3>
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="origin">Origen en China:*</label>
-                            <input type="text" id="origin" name="origin" class="form-control" placeholder="Ciudad o Puerto" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="destination">Destino en Honduras:*</label>
-                            <input type="text" id="destination" name="destination" class="form-control" placeholder="Ciudad o Dirección de Entrega" required>
-                        </div>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="product">Descripción del Producto:*</label>
-                        <textarea id="product" name="product" class="form-control" rows="3" placeholder="Sea lo más específico posible" required></textarea>
-                    </div>
-                    
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="value">Valor Estimado de la Mercancía (USD):*</label>
-                            <input type="number" id="value" name="value" class="form-control" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="weight">Peso Bruto Total Estimado (kg):*</label>
-                            <input type="number" id="weight" name="weight" class="form-control" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="volume">Volumen Total Estimado (CBM) o Dimensiones:</label>
-                            <input type="text" id="volume" name="volume" class="form-control" placeholder="Ej: 2 CBM, o 3 paquetes de 50x40x30cm">
-                        </div>
-                    </div>
-                    
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="shipping_mode">Modo de Envío Preferido:*</label>
-                            <select id="shipping_mode" name="shipping_mode" class="form-control" required>
-                                <option value="">-- Seleccione --</option>
-                                <option value="maritime">Marítimo</option>
-                                <option value="air">Aéreo</option>
-                                <option value="any">Cualquiera (recomendar más económico)</option>
-                            </select>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="maritime_type">Si es Marítimo:</label>
-                            <select id="maritime_type" name="maritime_type" class="form-control">
-                                <option value="">-- Seleccione si aplica --</option>
-                                <option value="fcl">Contenedor Completo (FCL)</option>
-                                <option value="lcl">Carga Consolidada (LCL)</option>
-                                <option value="roro">Roll-on/Roll-off (RoRo)</option>
-                                <option value="bulk">Break Bulk</option>
-                            </select>
-                        </div>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="additional">Información Adicional o Requerimientos Especiales:</label>
-                        <textarea id="additional" name="additional" class="form-control" rows="3"></textarea>
-                    </div>
-                    
-                    <div class="form-group">
-                        <input type="checkbox" id="terms" name="terms" required>
-                        <label for="terms">Acepto que mi información sea compartida con un socio logístico para obtener una cotización.*</label>
-                    </div>
-                    
-                    <button type="submit" class="btn">Enviar Solicitud de Cotización</button>
+            <div class="newsletter-content">
+                <h2>Manténgase Informado</h2>
+                <p>Reciba análisis y actualizaciones semanales sobre comercio China-Honduras directamente en su bandeja de entrada.</p>
+                <form class="newsletter-form" action="/subscribe/" method="POST">
+                    <input type="email" name="email" placeholder="Su correo electrónico" required>
+                    <button type="submit" class="button">Suscribirse</button>
                 </form>
             </div>
         </div>
-    </section>
+    </aside>
     
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-column">
-                    <h3>China-Honduras Trade Network</h3>
-                    <p>Su aliado confiable para la importación desde China a Honduras. Ofrecemos soluciones logísticas integrales adaptadas a sus necesidades.</p>
-                </div>
-                
-                <div class="footer-column">
-                    <h3>Enlaces Rápidos</h3>
-                    <ul class="footer-links">
-                        <li><a href="#shipping-methods">Métodos de Envío</a></li>
-                        <li><a href="#costs">Costos</a></li>
-                        <li><a href="#transit-times">Tiempos de Tránsito</a></li>
-                        <li><a href="#quote">Solicitar Cotización</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-column">
-                    <h3>Contáctenos</h3>
-                    <ul class="footer-links">
-                        <li>Email: info@chinahonduras.com</li>
-                        <li>Teléfono: +504 1234-5678</li>
-                    </ul>
-                </div>
+    <footer class="site-footer">
+        <div class="footer-widgets container">
+            <div class="widget about-widget">
+                <h3 class="widget-title">Sobre Nosotros</h3>
+                <p>China-Honduras Trade Network proporciona análisis crítico de las relaciones comerciales entre China y Honduras desde una perspectiva de economía política, con enfoque en logística, infraestructura y flujos de capital.</p>
             </div>
             
-            <div class="copyright">
-                <p>&copy; 2025 China-Honduras Trade Network. Todos los derechos reservados.</p>
+            <div class="widget links-widget">
+                <h3 class="widget-title">Secciones</h3>
+                <ul>
+                    <li><a href="/analysis/">Análisis Crítico</a></li>
+                    <li><a href="/logistics/">Logística & Envíos</a></li>
+                    <li><a href="/data/">Datos Comerciales</a></li>
+                    <li><a href="/about-us/">Quiénes Somos</a></li>
+                    <li><a href="/contact/">Contacto</a></li>
+                </ul>
+            </div>
+            
+            <div class="widget contact-widget">
+                <h3 class="widget-title">Contacto</h3>
+                <ul>
+                    <li>Email: <a href="mailto:info@chinahondurastradenetwork.com">info@chinahondurastradenetwork.com</a></li>
+                    <li>Teléfono: +504 1234-5678</li>
+                </ul>
+                <div class="social-links">
+                    <a href="https://twitter.com/CHTradeNetwork" target="_blank" rel="noopener" aria-label="Twitter">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+                    </a>
+                    <a href="https://linkedin.com/company/china-honduras-trade-network" target="_blank" rel="noopener" aria-label="LinkedIn">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect fill="currentColor" x="2" y="9" width="4" height="12"></rect><circle fill="currentColor" cx="4" cy="4" r="2"></circle></svg>
+                    </a>
+                </div>
             </div>
         </div>
+        
+        <div class="footer-bottom container">
+            <p class="copyright">© 2025 China-Honduras Trade Network. Todos los derechos reservados.</p>
+            <ul class="footer-menu">
+                <li><a href="/privacy-policy/">Política de Privacidad</a></li>
+                <li><a href="/terms-of-service/">Términos de Servicio</a></li>
+            </ul>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
