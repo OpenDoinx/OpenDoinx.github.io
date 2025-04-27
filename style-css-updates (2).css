@@ -1,0 +1,178 @@
+/* Add these styles to your existing style.css file */
+
+/* Logo styling */
+.site-branding {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.site-logo {
+    height: 50px;
+    width: auto;
+    margin-right: 15px;
+}
+
+.site-title {
+    display: flex;
+    flex-direction: column;
+}
+
+.site-title h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    line-height: 1.2;
+}
+
+/* Image styling improvements */
+.article-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.article-image img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.article-image:hover img {
+    transform: scale(1.05);
+}
+
+.featured-image {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.featured-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.image-caption {
+    font-size: 0.85rem;
+    color: #666;
+    margin-top: 8px;
+    text-align: center;
+    font-style: italic;
+}
+
+/* Author bio section with image */
+.author-bio {
+    display: flex;
+    align-items: flex-start;
+    margin: 40px 0;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+.author-bio img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+    border: 3px solid #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.bio-content {
+    flex: 1;
+}
+
+.bio-content h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+/* Newsletter styling with background */
+.newsletter {
+    background-color: #0055a4;
+    background-image: url('images/ui/newsletter-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 25px;
+    position: relative;
+    z-index: 1;
+}
+
+.newsletter::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 85, 164, 0.8);
+    z-index: -1;
+    border-radius: 8px;
+}
+
+.newsletter h3 {
+    color: #fff;
+}
+
+/* Footer with background */
+.site-footer {
+    background-color: #0055a4;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+
+.site-footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 55, 104, 0.9);
+    z-index: -1;
+}
+
+/* Media queries for responsive images */
+@media (max-width: 768px) {
+    .site-logo {
+        height: 40px;
+    }
+    
+    .site-title h1 {
+        font-size: 1.5rem;
+    }
+    
+    .author-bio {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .author-bio img {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .site-logo {
+        height: 35px;
+    }
+    
+    .site-title h1 {
+        font-size: 1.3rem;
+    }
+}
